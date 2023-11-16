@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 function NavBar() {
   return (
     <div>
-      <Link to="/"><Button>Main Page</Button></Link>
-      <Link to="/addTask"><Button>Add Task</Button></Link>
-      <Link to="/calendar"><Button>Calendar</Button></Link>
-      <Link to="/deleteTask"><Button>Delete Task</Button></Link>
+      <Link to="/"><button>Main Page</button></Link>
+      <Link to="/addTask"><button>Add Task</button></Link>
+      <Link to="/calendar"><button>Calendar</button></Link>
+      <Link to="/deleteTask"><button>Delete Task</button></Link>
     </div>
   )
 }
