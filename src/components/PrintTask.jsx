@@ -1,4 +1,4 @@
-export default function printTask({task})
+export default function PrintTask({task})
 {
     return(
         <div>
