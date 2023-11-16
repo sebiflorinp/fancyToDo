@@ -18,12 +18,6 @@ function DeleteTaskPage() {
     else
       setIndex(0)
   }
-  function handleDeleteClick(){
-    DeleteTask(index)
-  }
-  function printCurrentTask(){
-     return <>{tasks.filter((task) => task.id == index).map((task) =>{ return <PrintTask task = {task}/>})}</>
-  }
   return (
     <div>
     <h1>Delete Task</h1>
@@ -35,9 +29,9 @@ function DeleteTaskPage() {
         Next
       </button>
       <br />
-    {printCurrentTask}
+      {tasks.filter((task) => task.id == index).map((task) =>{ return <div key = {task.id}><PrintTask task = {task}/></div>})}
       <br />
-    <button onClick = {handleDeleteClick}>
+    <button onClick = {() => DeleteTask(index)}>
       Delete
     </button>
     </div>
