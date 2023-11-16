@@ -1,6 +1,11 @@
-function App(){
+import { Routes, Route } from "react-router-dom"
+
+
+function App() {
   return (
-    <p>Merge</p>
+    <Routes>
+      <Route path="/" element=/>
+    </Routes>
   )
 }
 
