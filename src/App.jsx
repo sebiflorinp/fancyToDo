@@ -6,12 +6,14 @@ import MainPage from "./pages/mainPage"
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={MainPage} />
-      <Route path="/addTask" element={AddTask} />
-      <Route path="/deleteTask" element={DeleteTask} />
-      <Route path="/calendar" element={Calendar} />
+    <div>
+      <Routes>
+        <Route path="/" element={<MainPage/>} />
+        <Route path="/addTask" element={<AddTask/>} />
+        <Route path="/deleteTask" element={<DeleteTask/>} />
+        <Route path="/calendar" element={<Calendar/>} />
     </Routes>
+    </div>
   )
 }
 
