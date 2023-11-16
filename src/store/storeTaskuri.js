@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-const useTask = create((set) => ({
+export const useTask = create((set) => ({
     tasks : [{id: 0, name: "Finish code", deadline: "19/11/2023", importance: "important"},
              {id: 1, name: "Eat pizza", deadline: "18/11/2023", importance: "neimportant"}],
     addTasks: (name, deadline, importance) => set((state) => ({
