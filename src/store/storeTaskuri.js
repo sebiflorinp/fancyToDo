@@ -7,6 +7,6 @@ export const useTask = create((set) => ({
         tasks : [...state.tasks, {id: state.tasks.length, name: name, deadline: deadline, importance: importance}]
     })),
     deleteTask: (index) => set((state) => ({
-        tasks : state.tasks.filter((task) => {task.id != index})
+        tasks : state.tasks.filter((task) => {return task.id != index})
     }))
 }))
