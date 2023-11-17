@@ -6,7 +6,7 @@ function AddTask() {
   const tasks = useTask((state) => state.tasks)
   const [newName, setNewName] = useState("")
   const [newDeadline, setNewDeadline] = useState("")
-  const [newImportanta, setNewImportanta] = useState("")
+  const [newImportanta, setNewImportanta] = useState("Important")
   return (
     <div>
       <div>

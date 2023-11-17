@@ -1,5 +1,6 @@
 export default function PrintTask({task})
 {
+    if(task == undefined) return <p>No tasks left to show :(</p>
     return(
         <div>
             <p>Task ID: {task.id}</p>
